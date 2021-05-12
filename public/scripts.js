@@ -77,6 +77,21 @@ function wsinit() {
     loadBoard();
 }
 
+function firebaseInit(){
+    var firebaseConfig = {
+        apiKey: "AIzaSyDazsZPKlQSCtq56d5u80fRsueSkNJwPDk",
+        authDomain: "nicksplace-793f5.firebaseapp.com",
+        projectId: "nicksplace-793f5",
+        storageBucket: "nicksplace-793f5.appspot.com",
+        messagingSenderId: "706096015391",
+        appId: "1:706096015391:web:904c732e3350f6f9b5cd2a",
+        measurementId: "G-V2DP9TCZXL"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+}
+
 function loadBoard(){
     console.log("loading board");
     board = document.getElementById("canvas");
