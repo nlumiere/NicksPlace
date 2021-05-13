@@ -5,7 +5,7 @@ const WebSocket = require('ws');
 const admin = require('firebase-admin');
 const serviceAccount = require('./serviceAccount.json');
 
-const port = 6969;
+const port = 443;
 const server = https.createServer(express);
 const wss = new WebSocket.Server({ server })
 
