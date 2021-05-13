@@ -19,7 +19,7 @@ function wsinit() {
             ws.close();
         }
 
-        ws = new WebSocket('ws://localhost:6969');
+        ws = new WebSocket('ws://52.88.255.8:6969');
         ws.onopen = () => {
             console.log('Connection opened!');
         }

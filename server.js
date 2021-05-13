@@ -1,12 +1,12 @@
 const express = require('express');
-const http = require('http');
+const https = require('https');
 const WebSocket = require('ws');
 // const firebase = require('firebase');
 const admin = require('firebase-admin');
 const serviceAccount = require('./serviceAccount.json');
 
 const port = 6969;
-const server = http.createServer(express);
+const server = https.createServer(express);
 const wss = new WebSocket.Server({ server })
 
 admin.initializeApp({
